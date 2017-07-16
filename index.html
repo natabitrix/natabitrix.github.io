@@ -1,20 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main.css">
+    <title>Карта.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Если вы используете API локально, то в URL ресурса необходимо указывать протокол в стандартном виде (http://...)-->
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="//yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="js/groups.js" type="text/javascript"></script>
+    <script src="js/object_list.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	
-	Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Которой над взобравшись дорогу рыбными свой деревни, парадигматическая она сбить даль щеке! Прямо мир агенство о предложения буквенных реторический это.
 
-	<p><img src="img/1.jpg" alt="Alt"></p>
-	<p><img src="img/2.jpg" alt="Alt"></p>
-	<p><img src="img/3.jpg" alt="Alt"></p>
-	
-	<script src="js/libs.min.js"></script>
+<body>
+
+<div id="mapcontainer">
+    <div id="map"></div>
+    <div id="menu"></div>
+</div>
+
+<!--Пример массива php для преобразования в json (data.js)
+<?
+$arr = array(
+    array(
+        "id" => "rf",
+        "name" => "Россия",
+        "style" => "",
+        "center" => "",
+        "items" => array(
+            array(
+                "id" => "1",
+                "name" => "Амурская область",
+                "style" => "",
+                "center" => "",
+                "items" => array(
+                    array(
+                        "id" => "2",
+                        "name" => "Амурск",
+                        "style" => "",
+                        "center" => ""
+                    ),
+                    array(
+                        "id" => "3",
+                        "name" => "Амурск2",
+                        "style" => "",
+                        "center" => ""
+                    )
+                )
+            ),
+
+            array(
+                "id" => "4",
+                "name" => "Воронежская область",
+                "style" => "",
+                "center" => "",
+                "items" => array(
+                    array(
+                        "id" => "5",
+                        "name" => "Воронеж",
+                        "style" => "",
+                        "center" => "",
+                    ),
+                    array(
+                        "id" => "6",
+                        "name" => "Воронеж2",
+                        "style" => "",
+                        "center" => ""
+                    )
+                )
+            )
+        )
+    ),
+    array(
+        "id" => "sng",
+        "name" => "СНГ",
+        "style" => "",
+        "center" => "",
+        "items" => array(
+            array(
+                "id" => "7",
+                "name" => "АРМЕНИЯ",
+                "style" => "",
+                "center" => "",
+                "items" => array(
+                    array(
+                        "id" => "8",
+                        "name" => "Ереван",
+                        "style" => "",
+                        "center" => ""
+                    ),
+                    array(
+                        "id" => "9",
+                        "name" => "Ереван2",
+                        "style" => "",
+                        "center" => ""
+                    )
+                )
+            ),
+
+            array(
+                "id" => "10",
+                "name" => "БЕЛАРУСЬ",
+                "style" => "",
+                "center" => "",
+                "items" => array(
+                    array(
+                        "id" => "11",
+                        "name" => "Брест",
+                        "style" => "",
+                        "center" => "",
+                    ),
+                    array(
+                        "id" => "12",
+                        "name" => "Брест2",
+                        "style" => "",
+                        "center" => ""
+                    )
+                )
+            )
+        )
+    )
+);
+echo '<pre>' . print_r($arr,1) . '</pre>';
+echo json_encode($arr,1);
+?>-->
 
 </body>
+
 </html>
