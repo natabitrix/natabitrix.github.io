@@ -198,7 +198,8 @@ function init() {
 
 
             if (searchField.length==0) {
-                $('.menu').children('li').show();
+                searchmenu.find('ul.submenu').show();
+                searchmenu.find('ul.subsubmenu').hide();
             }
         });
     }
